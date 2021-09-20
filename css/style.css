@@ -1,4 +1,10 @@
 body {
-    background-image: url(/img/BGdraft2.pnggit);
+    background-image: url(/img/BGdraft2.png);
     background-size: cover;
+}
+
+.tree {
+
+    margin-left: 650px;
+    height: 900px;
 }
