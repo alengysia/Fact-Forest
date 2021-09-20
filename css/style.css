@@ -1,19 +1,19 @@
 body {
     width: 100vh;
     height: 100vh;
-    background-image: url(/img/BGdraft4.png);
+    background-image: url(/img/BGdraft5.png);
     background-size: cover;
     position: fixed;
 }
 
 .tree {
     position: relative;
-    margin-left: 650px;
+    margin-left: 610px;
     margin-top: 150px;
     height: 800px;
 }
 .rock{
     position: relative;
     margin-top: -370px;
-    margin-left: -60px
+    margin-left: 70px
 }
