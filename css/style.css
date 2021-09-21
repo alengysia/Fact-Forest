@@ -12,11 +12,15 @@ body {
     left: 610px;
     top: 150px;
     height: 800px;
-    z-index: 1;
 }
 
-.squirrel-div p{
+.fact-div1 p{
+    position: absolute;
     background-color: white;
+    left: 570px;
+    top: 660px;
+    border-radius: 5px;
+    font-size: 20px;
 }
 
 .squirrel {
@@ -32,5 +36,5 @@ body {
     position: absolute;
     top: 570px;
     left: 70px;
-    z-index: 1;
+    
 }

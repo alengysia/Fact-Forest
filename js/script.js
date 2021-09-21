@@ -1,36 +1,37 @@
-const $pTag = $('#test');
 const $submit = $('#test-fact');
 const $form = $('form');
 const $tree = $('.tree');
-const $squirrelDiv = $('.squirrel-div');
+const $factDiv = $('.fact-div1');
 const $squirrel = $('.squirrel')
 
 $tree.on('click', popSquirrel);
 
 //fact generator function
-function getFact(evt) {
-    evt.preventDefault();
+function getFact(div) {
 
-$.ajax(`https://uselessfacts.jsph.pl//random.json?language=en`).then(function(fact){
 
-console.log(fact)
-hotFact = fact;
-render();
+    $.ajax(`https://uselessfacts.jsph.pl//random.json?language=en`).then(function (fact) {
 
-}, function(error) {
-    console.log(error);
-});
+        console.log(fact)
+        hotFact = fact;
+        render(div);
+
+    }, function (error) {
+        console.log(error);
+    });
 
 }
 
-function render(){
-    $pTag.text(hotFact.text);
-}
-//end fact generator function
+function render(div) {
+    div.append(`<p>${hotFact.text}</p>`);
+    //end fact generator function
 
 
-function popSquirrel(){
+};
+
+function popSquirrel() {
     $squirrel.fadeTo(2000, 1);
-    
-    }
-
+    setTimeout(function () {
+        getFact($factDiv)
+    }, 2000);
+};
