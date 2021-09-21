@@ -45,3 +45,13 @@ function popBunny() {
         getFact($factDivB)
     }, 2000);
 };
+
+$factDivS.on('click', 'p', function(){
+    $(this).remove();
+    $squirrel.fadeTo(1000, 0);
+})
+
+$factDivB.on('click', 'p', function(){
+    $(this).remove();
+    $bunny.fadeTo(1000, 0);
+})
