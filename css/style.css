@@ -7,13 +7,13 @@ body {
 }
 
 .tree {
-    position: relative;
+    position: absolute;
     margin-left: 610px;
     margin-top: 150px;
     height: 800px;
 }
 .rock{
-    position: relative;
-    margin-top: -370px;
+    position: absolute;
+    margin-top: 570px;
     margin-left: 70px
 }
