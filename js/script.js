@@ -1,9 +1,13 @@
 const $pTag = $('#test');
 const $submit = $('#test-fact');
 const $form = $('form');
+const $tree = $('.tree');
+const $squirrelDiv = $('.squirrel-div');
+const $squirrel = $('.squirrel')
 
-$form.on('submit', getFact)
+$tree.on('click', popSquirrel);
 
+//fact generator function
 function getFact(evt) {
     evt.preventDefault();
 
@@ -22,3 +26,11 @@ render();
 function render(){
     $pTag.text(hotFact.text);
 }
+//end fact generator function
+
+
+function popSquirrel(){
+    $squirrel.fadeTo(2000, 1);
+    
+    }
+

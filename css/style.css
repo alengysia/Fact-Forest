@@ -4,16 +4,33 @@ body {
     background-image: url(/img/BGdraft5.png);
     background-size: cover;
     position: fixed;
+    
 }
 
 .tree {
     position: absolute;
-    margin-left: 610px;
-    margin-top: 150px;
+    left: 610px;
+    top: 150px;
     height: 800px;
+    z-index: 1;
 }
+
+.squirrel-div p{
+    background-color: white;
+}
+
+.squirrel {
+    position: absolute;
+    left: 964px;
+    top: 735px;
+    width: 70px;
+    z-index: 2;
+    opacity: 0;
+}
+
 .rock{
     position: absolute;
-    margin-top: 570px;
-    margin-left: 70px
+    top: 570px;
+    left: 70px;
+    z-index: 1;
 }
