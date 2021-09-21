@@ -1,10 +1,14 @@
 const $submit = $('#test-fact');
 const $form = $('form');
 const $tree = $('.tree');
-const $factDiv = $('.fact-div1');
-const $squirrel = $('.squirrel')
+const $rock = $('.rock')
+const $factDivS = $('.fact-div1');
+const $squirrel = $('.squirrel');
+const $factDivB = $('.fact-div2');
+const $bunny = $('.bunny');
 
 $tree.on('click', popSquirrel);
+$rock.on('click', popBunny);
 
 //fact generator function
 function getFact(div) {
@@ -32,6 +36,12 @@ function render(div) {
 function popSquirrel() {
     $squirrel.fadeTo(2000, 1);
     setTimeout(function () {
-        getFact($factDiv)
+        getFact($factDivS)
+    }, 2000);
+};
+function popBunny() {
+    $bunny.fadeTo(2000, 1);
+    setTimeout(function () {
+        getFact($factDivB)
     }, 2000);
 };

@@ -38,3 +38,19 @@ body {
     left: 70px;
     
 }
+
+.fact-div2 p{
+    position: absolute;
+    background-color: white;
+    left: 600px;
+    bottom: 50px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.bunny{
+    width: 100px;
+    position: absolute;
+    bottom: 40px;
+    left: 480px;
+    opacity: 0;
+}
