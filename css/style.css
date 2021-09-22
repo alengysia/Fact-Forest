@@ -45,6 +45,7 @@ body {
 .fact-div2 p{
     position: absolute;
     background-color: white;
+    max-width: 600px;
     left: 600px;
     bottom: 50px;
     border-radius: 5px;
