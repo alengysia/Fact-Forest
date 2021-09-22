@@ -164,29 +164,32 @@ $rock.on('click', popBunny);
 $keepOut.on('click', popTroll);
 
 //random number generator
-const getRandNum = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
-const randomIndex = getRandNum(0, 49);
 
 
 //fact generator function
 function getFact(div) {
-
-
+    
+    
     $.ajax(`https://uselessfacts.jsph.pl//random.json?language=en`).then(function (fact) {
-
+        
         console.log(fact)
         hotFact = fact;
         render(div);
-
+        
     }, function (error) {
         console.log(error);
     });
-
+    
 };
 
 function getBadFact(div) {
+    const getRandNum = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
+    const randomIndex = getRandNum(0, 49);
+    bad = $fakeFact[randomIndex].text
     renderBad(div);
-
+};
+function renderBad(div) {
+    div.append(`<p>${bad}</p>`);
 };
 
 function render(div) {
@@ -194,9 +197,6 @@ function render(div) {
     //end fact generator function
 };
 
-function renderBad(div) {
-    div.append(`<p>${$fakeFact[randomIndex].text}</p>`);
-};
 
 function popSquirrel() {
     $squirrel.fadeTo(2000, 1);
