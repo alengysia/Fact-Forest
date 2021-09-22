@@ -24,9 +24,13 @@ body {
 }
 
 .squirrel {
+    background-image: url(/img/squirrel/squirrelhole.png);
+    background-size: 70px;
+    background-repeat: no-repeat;
     position: absolute;
     left: 964px;
-    top: 735px;
+    bottom: 165px;
+    height: 70px;
     width: 70px;
     z-index: 2;
     opacity: 0;
@@ -48,7 +52,11 @@ body {
 }
 
 .bunny{
+    background-image: url(/img/bunny/bunny.png);
+    background-size: 100px;
+    background-repeat: no-repeat;
     width: 100px;
+    height: 140px;
     position: absolute;
     bottom: 40px;
     left: 480px;
@@ -78,3 +86,4 @@ body {
     border-radius: 5px;
     font-size: 20px;
 }
+
