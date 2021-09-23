@@ -15,12 +15,15 @@ body {
 }
 
 .fact-div1 p{
+    font-family: 'Gluten', cursive;
     position: absolute;
     background-color: white;
-    left: 570px;
-    top: 660px;
+    left: 500px;
+    bottom: 260px;
     border-radius: 5px;
-    font-size: 20px;
+    font-size: 22px;
+    padding: 5px;
+    max-width: 600px;
 }
 
 .squirrel {
@@ -43,6 +46,7 @@ body {
 }
 
 .fact-div2 p{
+    font-family: 'Gluten', cursive;
     position: absolute;
     background-color: white;
     max-width: 600px;
@@ -50,6 +54,7 @@ body {
     bottom: 50px;
     border-radius: 5px;
     font-size: 20px;
+    padding: 5px;
 }
 
 .bunny{
@@ -80,11 +85,13 @@ body {
 }
 
 .fake-fact p{
+    font-family: 'Schoolbell', cursive;
     position: absolute;
     background-color: white;
     right: 200px;
     bottom: 350px;
     border-radius: 5px;
+    padding: 5px;
     font-size: 20px;
 }
 
