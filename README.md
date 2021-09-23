@@ -12,4 +12,7 @@ This is a random fact generator with a fun forest twist. The facts generated wil
 - random fact API. 
 
 ![screenshot forest](/img/screenshots/forest.png)
+![screenshot squirrel fact](/img/screenshots/squirrelscreen.png)
+![screenshot bunny fact](img/screenshots/bunnyscreen.png)
+![screenshot troll fact](/img/screenshots/trollscreen.png)
 
