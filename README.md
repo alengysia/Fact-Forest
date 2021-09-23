@@ -26,4 +26,4 @@ https://hardcore-jackson-6303e5.netlify.app/
 
 #### Future enhancements
 
-in the future I would like to add more animals and animations. 
+in the future I would like to add more animals and animations, as well as make it reflexive to screen size changes. 
