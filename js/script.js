@@ -168,18 +168,18 @@ $keepOut.on('click', popTroll);
 
 //fact generator function
 function getFact(div) {
-    
-    
+
+
     $.ajax(`https://uselessfacts.jsph.pl//random.json?language=en`).then(function (fact) {
-        
+
         console.log(fact)
         hotFact = fact;
         render(div);
-        
+
     }, function (error) {
         console.log(error);
     });
-    
+
 };
 
 function getBadFact(div) {
@@ -188,6 +188,7 @@ function getBadFact(div) {
     bad = $fakeFact[randomIndex].text
     renderBad(div);
 };
+
 function renderBad(div) {
     div.append(`<p>${bad}</p>`);
 };
@@ -230,7 +231,7 @@ $factDivB.on('click', 'p', function () {
     $bunny.fadeTo(1000, 0);
 });
 
-$fakeFactDiv.on('click', 'p', function() {
+$fakeFactDiv.on('click', 'p', function () {
     $(this).remove();
     $troll.fadeTo(1000, 0)
 });

@@ -4,7 +4,7 @@ body {
     background-image: url(/img/BGdraft5.png);
     background-size: cover;
     position: fixed;
-    
+
 }
 
 .tree {
@@ -14,7 +14,7 @@ body {
     height: 800px;
 }
 
-.fact-div1 p{
+.fact-div1 p {
     font-family: 'Gluten', cursive;
     position: absolute;
     background-color: white;
@@ -39,13 +39,13 @@ body {
     opacity: 0;
 }
 
-.rock{
+.rock {
     position: absolute;
     bottom: 30px;
     left: 290px;
 }
 
-.fact-div2 p{
+.fact-div2 p {
     font-family: 'Gluten', cursive;
     position: absolute;
     background-color: white;
@@ -57,7 +57,7 @@ body {
     padding: 5px;
 }
 
-.bunny{
+.bunny {
     background-image: url(/img/bunny/bunny.png);
     background-size: 100px;
     background-repeat: no-repeat;
@@ -84,7 +84,7 @@ body {
     opacity: 0;
 }
 
-.fake-fact p{
+.fake-fact p {
     font-family: 'Schoolbell', cursive;
     position: absolute;
     background-color: white;
@@ -94,4 +94,3 @@ body {
     padding: 5px;
     font-size: 20px;
 }
-
