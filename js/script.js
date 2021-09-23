@@ -1,3 +1,4 @@
+//fake fact array
 const $fakeFact = [{
         text: "Bulls get angry when they see the color red."
     },
@@ -147,8 +148,9 @@ const $fakeFact = [{
     },
 ];
 
-const $submit = $('#test-fact');
-const $form = $('form');
+
+//global variables
+
 const $tree = $('.tree');
 const $rock = $('.rock')
 const $factDivS = $('.fact-div1');
@@ -159,6 +161,8 @@ const $keepOut = $('.ko-sign');
 const $troll = $('.troll');
 const $fakeFactDiv = $('.fake-fact');
 
+//onclick events
+
 $tree.on('click', popSquirrel);
 $rock.on('click', popBunny);
 $keepOut.on('click', popTroll);
@@ -167,6 +171,7 @@ $keepOut.on('click', popTroll);
 
 
 //fact generator function
+
 function getFact(div) {
 
 
@@ -181,7 +186,7 @@ function getFact(div) {
     });
 
 };
-
+//troll random bad fact generator from fake fact array
 function getBadFact(div) {
     const getRandNum = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
     const randomIndex = getRandNum(0, 49);
@@ -189,16 +194,18 @@ function getBadFact(div) {
     renderBad(div);
 };
 
+//render fact functions
+
 function renderBad(div) {
     div.append(`<p>${bad}</p>`);
 };
 
 function render(div) {
     div.append(`<p>${hotFact.text}</p>`);
-    //end fact generator function
 };
+//end fact generator function
 
-
+//animal appear functions
 function popSquirrel() {
     $squirrel.fadeTo(2000, 1);
     setTimeout(function () {
@@ -220,7 +227,7 @@ function popTroll() {
     }, 2000);
 };
 
-
+//animal dissapear functions
 $factDivS.on('click', 'p', function () {
     $(this).remove();
     $squirrel.fadeTo(1000, 0);
