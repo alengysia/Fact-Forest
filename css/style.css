@@ -2,7 +2,7 @@ body {
     width: 100%;
     height: 100%;
     background-image: url(/img/BGdraft5.png);
-    background-size: cover;
+    background-size: 100%;
     position: fixed;
 
 }
@@ -92,5 +92,5 @@ body {
     bottom: 350px;
     border-radius: 5px;
     padding: 5px;
-    font-size: 22px;
+    font-size: 2px;
 }
