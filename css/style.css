@@ -8,7 +8,7 @@ body {
 }
 
 .tree {
-    position: absolute;
+    position: relative;
     left: 610px;
     top: 150px;
     height: 800px;
@@ -26,13 +26,15 @@ body {
     max-width: 600px;
 }
 
+
+
 .squirrel {
     background-image: url(/img/squirrel/squirrelhole.png);
     background-size: 70px;
     background-repeat: no-repeat;
-    position: absolute;
+    position: relative;
     left: 964px;
-    bottom: 165px;
+    bottom: 67px;
     height: 70px;
     width: 70px;
     z-index: 2;
