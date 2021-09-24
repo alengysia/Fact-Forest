@@ -167,7 +167,7 @@ $tree.on('click', popSquirrel);
 $rock.on('click', popBunny);
 $keepOut.on('click', popTroll);
 
-//random number generator
+
 
 
 //fact generator function
